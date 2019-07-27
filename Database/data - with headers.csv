@@ -1,2 +1,0 @@
-eventId, eventLocation, eventRoom, eventTitle, eventStart, eventEnd, chair, chairId, chairAffiliation, creator, creatorAffiliation, eventType, category, categoryId, url
-817571, "CERN", "500/1-001", "What is String Theory? - 1/1", "2019-07-26 12:30:00", "2019-07-26 11:35:00", "Weigand, Timo Stephan", 4487024, "CERN", "Bejaoui, Adriana", "CERN", "Conference", "Summer Student Lecture Programme Course", 345, "https://indico.cern.ch/event/817571/"
