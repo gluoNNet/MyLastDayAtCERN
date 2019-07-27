@@ -11,6 +11,10 @@ The programming language used for this Challenge is [Python](https://www.python.
 
 ## Resources
 
+### Working with text data
+
+- Scikit-learn tutorial : https://scikit-learn.org/stable/tutorial/text_analytics/working_with_text_data.html
+
 ### Recommender Systems
 
 - Recommender systems, derived from scikit-learn [http://surpriselib.com/]
