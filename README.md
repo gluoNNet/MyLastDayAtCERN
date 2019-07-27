@@ -3,6 +3,12 @@ My Last Day at CERN Challenge at the CERN Webfest 2019
 
 The programming language used for this Challenge is [Python](https://www.python.org/) version XXX.
 
+### Indico data
+
+- Documentation and tutorial, https://docs.getindico.io/en/stable/http_api/
+
+- Sample url call to the API : https://indico.server/export/event/769726.json?detail=contributions&pretty=yes
+
 ## Resources
 
 ### Recommender Systems
