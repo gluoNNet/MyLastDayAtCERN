@@ -19,7 +19,21 @@ The programming language used for this Challenge is [Python](https://www.python.
 
 ### Web app development
 
+#### Django
 - [Django](https://www.djangoproject.com/) : suggested to read first the [overview](https://docs.djangoproject.com/en/2.2/intro/overview/) then the [tutorial](https://docs.djangoproject.com/en/2.2/intro/tutorial01/)
+
+- List of useful tutorials how to use Django:
+  - https://realpython.com/get-started-with-django-1/#the-structure-of-a-django-website
+  - https://developer.mozilla.org/en-US/docs/Learn/Server-side/Django/skeleton_website
+  - https://www.datacamp.com/community/tutorials/web-development-django#app
+  - https://www.tutorialspoint.com/django/django_form_processing.htm
+
+### Interface styling
+
+The corporate identity colors of CERN (RGB):
+  - R:11
+  - G:9
+  - B:174
 
 ### Visualization for the output
 
