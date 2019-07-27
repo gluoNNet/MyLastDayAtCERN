@@ -17,4 +17,4 @@ The programming language used for this Challenge is [Python](https://www.python.
 
 ### Visualization for the output
 
-- Interactivate network visualization for 'Game of Thrones' characters : [https://news.northeastern.edu/2019/04/11/the-game-of-thrones-social-network/]
+- Interactivate network visualization for 'Game of Thrones' characters : https://news.northeastern.edu/2019/04/11/the-game-of-thrones-social-network/
