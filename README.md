@@ -10,4 +10,4 @@ The programming language used for this Challenge is [Python](https://www.python.
 
 ### Web app development
 
-- [Django](https://www.djangoproject.com/):suggested to read first the [overview](https://docs.djangoproject.com/en/2.2/intro/overview/) then the [tutorial] (https://docs.djangoproject.com/en/2.2/intro/tutorial01/)
+- [Django](https://www.djangoproject.com/) : suggested to read first the [overview](https://docs.djangoproject.com/en/2.2/intro/overview/) then the [tutorial] (https://docs.djangoproject.com/en/2.2/intro/tutorial01/)
