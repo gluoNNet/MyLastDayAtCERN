@@ -1,8 +1,6 @@
 from windows.Screens import *
 from ConsoleFunctions import *
 
-from network import *
-
 
 class ConsoleInstance(ConsoleFunctions):
 
@@ -20,10 +18,6 @@ class ConsoleInstance(ConsoleFunctions):
         self.main_screen.open_story.connect(self.story_screen.open_window)
         self.story_screen.story_finish.connect(self.main_screen.set_story_false)
         self.finished_calculating.connect(self.start_story)
-
-        a = network_calculation("/Users/williamyam/PycharmProjects/CERNwebfest/old/sample network/descriptions/descriptions_18.csv")
-        print("LOOK HERE")
-        print(a)
 
     @Slot()
     def start_story(self):
