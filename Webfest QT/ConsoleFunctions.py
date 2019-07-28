@@ -12,7 +12,7 @@ class ConsoleFunctions(QObject):
         super(ConsoleFunctions, self).__init__(parent)
         self.dicPeople = {}
         self.dicEvents = {}
-        self.lisRatings = {}
+        self.lisAttendance = {}
 
         self.id = ""
         self.recommendations = ["", "", "", "", "", ""]
@@ -30,13 +30,13 @@ class ConsoleFunctions(QObject):
         with open("data/events_{}.json".format(state), "rb") as f:
             self.dicEvents.update(pickle.load(f))
 
-        with open('data/ratings_{}.csv'.format(state)) as csvfile:
+        with open('data/attendance_{}.csv'.format(state)) as csvfile:
             readCSV = csv.reader(csvfile, delimiter=',')
             for row in readCSV:
                 if row == ["personId", "eventId", "rating"]: continue
                 name = row[0]
                 event = row[1]
-                self.lisRatings.append([name, event])
+                self.lisAttendance.append([name, event])
 
     @Slot(str)
     def calculate_recommendations(self, id):
