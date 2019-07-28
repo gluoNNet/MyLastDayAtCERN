@@ -55,7 +55,7 @@
      <string/>
     </property>
    </widget>
-   <widget class="QLabel" name="label">
+   <widget class="QLabel" name="title">
     <property name="geometry">
      <rect>
       <x>150</x>
@@ -116,7 +116,7 @@
      <set>Qt::AlignCenter</set>
     </property>
    </widget>
-   <widget class="QLabel" name="label_2">
+   <widget class="QLabel" name="caption">
     <property name="geometry">
      <rect>
       <x>150</x>
@@ -142,8 +142,8 @@
    <zorder>base_image</zorder>
    <zorder>submit_button</zorder>
    <zorder>input_line</zorder>
-   <zorder>label</zorder>
-   <zorder>label_2</zorder>
+   <zorder>title</zorder>
+   <zorder>caption</zorder>
   </widget>
   <widget class="QStatusBar" name="statusbar"/>
  </widget>
