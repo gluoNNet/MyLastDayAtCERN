@@ -64,7 +64,7 @@ class StoryScreen(QObject):
 
         self.extract_items()
         self.connect_signals()
-        self.scene = -1
+        self.scene = 0
         self.storyText = []
         self.storyBegin = False
 
@@ -98,9 +98,9 @@ class StoryScreen(QObject):
     def go_next_screen(self):
         if not self.storyBegin:
             return
-        if self.scene == 5:
+        if self.scene == 6:
             self.window.hide()
-            self.scene = -1
+            self.scene = 0
             self.update_screen()
             self.storyBegin = False
             self.story_finish.emit()
