@@ -4,8 +4,8 @@ from ConsoleFunctions import *
 
 class ConsoleInstance(ConsoleFunctions):
 
-    def __init__(self):
-        ConsoleFunctions.__init__(self)
+    def __init__(self, full):
+        ConsoleFunctions.__init__(self, full)
 
         app = QApplication(sys.argv)
         self.main_screen = MainScreen("windows/main_window.ui")
@@ -26,4 +26,4 @@ class ConsoleInstance(ConsoleFunctions):
 
 
 if __name__ == '__main__':
-    ConsoleInstance()
+    ConsoleInstance(False)

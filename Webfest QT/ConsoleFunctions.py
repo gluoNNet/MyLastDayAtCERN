@@ -5,11 +5,10 @@ import csv
 
 
 class ConsoleFunctions(QObject):
-    """Game functions"""
 
     finished_calculating = Signal()
 
-    def __init__(self, parent=None):
+    def __init__(self, full, parent=None):
         super(ConsoleFunctions, self).__init__(parent)
         self.dicPeople = {}
         self.dicEvents = {}
@@ -19,16 +18,19 @@ class ConsoleFunctions(QObject):
         self.recommendations = ["", "", "", "", "", ""]
         self.storyText = ["", "", "", "", "", ""]
 
-        self.import_files()
+        print(full)
+        #self.import_files(full)
 
-    def import_files(self):
-        with open("data/people_all.json", "rb") as f:
+    def import_files(self, full):
+        state = "all" if full  else "18"
+
+        with open("data/people_{}.json".format(state), "rb") as f:
             self.dicPeople.update(pickle.load(f))
 
-        with open("data/events_all.json", "rb") as f:
+        with open("data/events_{}.json".format(state), "rb") as f:
             self.dicEvents.update(pickle.load(f))
 
-        with open('data/ratings_all.csv') as csvfile:
+        with open('data/ratings_{}.csv'.format(state)) as csvfile:
             readCSV = csv.reader(csvfile, delimiter=',')
             for row in readCSV:
                 if row == ["personId", "eventId", "rating"]: continue
@@ -39,6 +41,10 @@ class ConsoleFunctions(QObject):
     @Slot(str)
     def calculate_recommendations(self, id):
         print("Calculate recommendations with id: {}".format(id))
+        databaseName = id.replace(",", "{comma}")
+
+        # backend network calculations
+        # returns recommendation array
 
         self.recommendations[0] = "Prof Famous"
         self.recommendations[1] = "Event Joy"
