@@ -16,7 +16,7 @@ class ConsoleFunctions(QObject):
 
         self.id = ""
         self.recommendations = ["", "", "", "", "", ""]
-        self.storyText = ["", "", "", "", "", ""]
+        self.storyText = ["", "", "", "", "", "", ""]
 
         print(full)
         #self.import_files(full)
@@ -57,9 +57,10 @@ class ConsoleFunctions(QObject):
         self.finished_calculating.emit()
 
     def create_story(self):
-        self.storyText[0] = "You entered the cocktail party and met " + self.recommendations[0] + " with awe!"
-        self.storyText[1] = "Then you walked right into your favorite " + self.recommendations[1] + "."
-        self.storyText[2] = "In the corner was " + self.recommendations[2] + " waving at you cheerfully."
-        self.storyText[3] = "You took a risk and went to talk with " + self.recommendations[3] + "."
-        self.storyText[4] = "Of course, you cannot miss chatting with " + self.recommendations[4] + "."
-        self.storyText[5] = "Finally, a surprise " + self.recommendations[5] + " appeared from nowhere!"
+        self.storyText[0] = "Calculating... Your perfect day"
+        self.storyText[1] = "You entered the cocktail party and met " + self.recommendations[0] + " with awe!"
+        self.storyText[2] = "Then you walked right into your favorite " + self.recommendations[1] + "."
+        self.storyText[3] = "In the corner was " + self.recommendations[2] + " waving at you cheerfully."
+        self.storyText[4] = "You took a risk and went to talk with " + self.recommendations[3] + "."
+        self.storyText[5] = "Of course, you cannot miss chatting with " + self.recommendations[4] + "."
+        self.storyText[6] = "Finally, a surprise " + self.recommendations[5] + " appeared from nowhere!"

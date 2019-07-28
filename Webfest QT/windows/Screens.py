@@ -103,6 +103,7 @@ class StoryScreen(QObject):
             self.scene = 0
             self.update_screen()
             self.storyBegin = False
+            self.story_box.clear()
             self.story_finish.emit()
         else:
             self.scene += 1
