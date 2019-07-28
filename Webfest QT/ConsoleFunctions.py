@@ -33,6 +33,7 @@ class ConsoleFunctions(QObject):
         with open('data/ratings_all.csv') as csvfile:
             readCSV = csv.reader(csvfile, delimiter=',')
             for row in readCSV:
+                if row == ["personId", "eventId", "rating"]: continue
                 name = row[0]
                 event = row[1]
                 self.lisRatings.append([name, event])
