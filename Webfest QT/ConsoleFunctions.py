@@ -24,11 +24,9 @@ class ConsoleFunctions(QObject):
     def import_files(self):
         with open("data/people_all.json", "rb") as f:
             self.dicPeople.update(pickle.load(f))
-        f.close()
 
         with open("data/events_all.json", "rb") as f:
             self.dicEvents.update(pickle.load(f))
-        f.close()
 
         with open('data/ratings_all.csv') as csvfile:
             readCSV = csv.reader(csvfile, delimiter=',')
