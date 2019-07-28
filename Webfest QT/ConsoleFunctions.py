@@ -3,6 +3,8 @@ from PySide2.QtCore import QObject, Signal, Slot
 import pickle
 import csv
 
+#import network
+
 
 class ConsoleFunctions(QObject):
 
@@ -45,6 +47,7 @@ class ConsoleFunctions(QObject):
 
         # backend network calculations
         # returns recommendation array
+        #network.network_calculation("/Users/williamyam/PycharmProjects/CERNwebfest/old/sample network/descriptions/descriptions_18.csv")
 
         self.recommendations[0] = "Prof Famous"
         self.recommendations[1] = "Event Joy"
