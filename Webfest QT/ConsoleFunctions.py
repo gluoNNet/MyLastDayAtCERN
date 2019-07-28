@@ -1,5 +1,8 @@
 from PySide2.QtCore import QObject, Signal, Slot
 
+import pickle
+import csv
+
 
 class ConsoleFunctions(QObject):
     """Game functions"""
@@ -8,9 +11,31 @@ class ConsoleFunctions(QObject):
 
     def __init__(self, parent=None):
         super(ConsoleFunctions, self).__init__(parent)
+        self.dicPeople = {}
+        self.dicEvents = {}
+        self.lisRatings = {}
+
         self.id = ""
         self.recommendations = ["", "", "", "", "", ""]
         self.storyText = ["", "", "", "", "", ""]
+
+        self.import_files()
+
+    def import_files(self):
+        with open("data/people_all.json", "rb") as f:
+            self.dicPeople.update(pickle.load(f))
+        f.close()
+
+        with open("data/events_all.json", "rb") as f:
+            self.dicEvents.update(pickle.load(f))
+        f.close()
+
+        with open('data/ratings_all.csv') as csvfile:
+            readCSV = csv.reader(csvfile, delimiter=',')
+            for row in readCSV:
+                name = row[0]
+                event = row[1]
+                self.lisRatings.append([name, event])
 
     @Slot(str)
     def calculate_recommendations(self, id):
