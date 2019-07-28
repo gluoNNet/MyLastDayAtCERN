@@ -112,5 +112,5 @@ class StoryScreen(QObject):
     def update_screen(self):
         self.story_box.setText(self.storyText[self.scene])
 
-        image = QPixmap("images/image_{}.jpg".format(self.scene))
+        image = QPixmap("images/image_10{}.jpg".format(self.scene))
         self.story_image.setPixmap(image)

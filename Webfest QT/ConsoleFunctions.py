@@ -61,9 +61,9 @@ class ConsoleFunctions(QObject):
 
     def create_story(self):
         self.storyText[0] = "Calculating... Your perfect day"
-        self.storyText[1] = "You entered the cocktail party and met " + self.recommendations[0] + " with awe!"
-        self.storyText[2] = "Then you walked right into your favorite " + self.recommendations[1] + "."
-        self.storyText[3] = "In the corner was " + self.recommendations[2] + " waving at you cheerfully."
-        self.storyText[4] = "You took a risk and went to talk with " + self.recommendations[3] + "."
-        self.storyText[5] = "Of course, you cannot miss chatting with " + self.recommendations[4] + "."
-        self.storyText[6] = "Finally, a surprise " + self.recommendations[5] + " appeared from nowhere!"
+        self.storyText[1] = "Don't forget to attend an interesting lecture"  # "You entered the cocktail party and met " + self.recommendations[0] + " with awe!"
+        self.storyText[2] = "It's exciting to explore in a workshop"  # "Then you walked right into your favorite " + self.recommendations[1] + "."
+        self.storyText[3] = "Contribute your time to a webfest hackathon"  # In the corner was " + self.recommendations[2] + " waving at you cheerfully."
+        self.storyText[4] = "In the summer student drink, your friends are waving at you cheerfully."  # "You took a risk and went to talk with " + self.recommendations[3] + "."
+        self.storyText[5] = "Of course, you cannot miss visiting CMS"  # "Of course, you cannot miss chatting with " + self.recommendations[4] + "."
+        self.storyText[6] = "Finally, a surprise, summer student photo appeared from nowhere!"  # "Finally, a surprise " + self.recommendations[5] + " appeared from nowhere!"
