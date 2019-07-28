@@ -68,7 +68,7 @@ class StoryScreen(QObject):
         self.storyText = []
         self.storyBegin = False
 
-        image = QPixmap("images/black.jpg")
+        image = QPixmap("images/cern_color.jpg")
         self.bottom_image.setPixmap(image)
 
         self.window.hide()
